@@ -6,7 +6,7 @@
 /*   By: odale-dr <odale-dr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/11 19:13:28 by odale-dr          #+#    #+#             */
-/*   Updated: 2019/07/13 17:30:24 by odale-dr         ###   ########.fr       */
+/*   Updated: 2019/07/18 20:50:29 by odale-dr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ float			return_float(char *s)
 
 	znak = 1;
 	x = 0;
-	ft_putstr("\n \n");
-	ft_putstr(s);
+	// ft_putstr("\n \n");
+	// ft_putstr(s);
 	i = 0;
 	while (ft_isdigit(s[i]) != 1)
 	{
@@ -55,6 +55,6 @@ float			return_float(char *s)
 	}
 	if (s[i] != '\0')
 		x = (float)ft_fl_after(s, x, i);
-	printf("\n FLOAT = %f \n", x * znak);
+	// printf("\n FLOAT = %f \n", x * znak);
 	return (x * znak);
 }

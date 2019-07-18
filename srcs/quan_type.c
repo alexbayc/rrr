@@ -6,7 +6,7 @@
 /*   By: odale-dr <odale-dr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/13 14:12:15 by odale-dr          #+#    #+#             */
-/*   Updated: 2019/07/13 17:56:01 by odale-dr         ###   ########.fr       */
+/*   Updated: 2019/07/18 20:51:43 by odale-dr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int				quan_type(char *s)
 	}
 	close(fd);
 	free(f);
-	ft_putstr("\n ______________________________");
-	ft_putstr(ft_itoa(quan));
-	ft_putstr("\n");
+	// ft_putstr("\n ______________________________");
+	// ft_putstr(ft_itoa(quan));
+	// ft_putstr("\n");
 	return(quan);
 }

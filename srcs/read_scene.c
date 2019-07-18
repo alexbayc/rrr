@@ -6,7 +6,7 @@
 /*   By: odale-dr <odale-dr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/11 18:17:04 by odale-dr          #+#    #+#             */
-/*   Updated: 2019/07/15 19:16:39 by odale-dr         ###   ########.fr       */
+/*   Updated: 2019/07/18 20:51:20 by odale-dr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ void			pars(t_obj * cpu_spheres, char **x, int r)
 	t = i;
 	while (t < r && x[t] != NULL)
 	{
-		ft_putstr(ft_itoa(t));
-		ft_putstr("         =           ");
-		ft_putstr(x[t]);
-		ft_putstr("\n");
+		// ft_putstr(ft_itoa(t));
+		// ft_putstr("         =           ");
+		// ft_putstr(x[t]);
+		// ft_putstr("\n");
 		if ((ft_strstr(x[t], "Type") != NULL) &&(ft_strstr(x[t], "//") == NULL))
 			type(cpu_spheres, x, r, t);
 		t++;
@@ -43,14 +43,14 @@ void			read_sc(t_obj* cpu_spheres, int fd)
 		if (ft_strlen(x[i]) == 0)
 		{
 			pars(cpu_spheres, x, i);
-			ft_putstr("\n");
+			// ft_putstr("\n");
 			//break ;
 		}
 		i++;
 	}
 	pars(cpu_spheres, x, i);
-	ft_putstr("\n------------");
-	ft_putstr(ft_itoa(i));
+	// ft_putstr("\n------------");
+	// ft_putstr(ft_itoa(i));
 
 	free(x);
 }
